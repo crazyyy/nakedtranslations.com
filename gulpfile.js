@@ -72,11 +72,13 @@ var autoprefixer = require('autoprefixer'),
   mqpacker = require('css-mqpacker'),
   csswring = require('csswring'),
   cssnext = require('cssnext'),
-  removePrefixes = require('postcss-remove-prefixes');
+  removePrefixes = require('postcss-remove-prefixes'),
+  postcssUnprefix = require('postcss-unprefix');
 
 // Copy web fonts to dist
 gulp.task('cleancss', function() {
   var processors = [
+    postcssUnprefix,
     removePrefixes,
   ];
 

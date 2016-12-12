@@ -67,7 +67,8 @@
   },
   "dependencies": {
     "jquery": "^2.1.3",
-    "postcss-remove-prefixes": "^1.1.0"
+    "postcss-remove-prefixes": "^1.1.0",
+    "postcss-unprefix": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
