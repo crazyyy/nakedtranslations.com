@@ -71,7 +71,23 @@ var gulp = require('gulp'),
 var autoprefixer = require('autoprefixer'),
   mqpacker = require('css-mqpacker'),
   csswring = require('csswring'),
-  cssnext = require('cssnext');
+  cssnext = require('cssnext'),
+  removePrefixes = require('postcss-remove-prefixes');
+
+// Copy web fonts to dist
+gulp.task('cleancss', function() {
+  var processors = [
+    removePrefixes,
+  ];
+
+  return gulp.src('assets/css_old/*.css')
+    .pipe(plugins.postcss(processors))
+    .pipe(gulp.dest('assets/css_new/'))
+    .pipe(plugins.size({
+      showFiles: true,
+      title: 'task:cleancss'
+    }));
+});
 
 // Copy web fonts to dist
 gulp.task('fonts', function() {
