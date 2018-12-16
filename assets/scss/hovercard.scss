@@ -1,0 +1,341 @@
+.gcard {
+  position: absolute;
+  z-index: 20;
+
+  max-width: 400px;
+  margin: 0;
+
+  box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+  .grav-inner {
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+    font-size: 12px;
+    font-style: normal !important;
+    line-height: 150%;
+
+    position: relative;
+
+    zoom: 1;
+
+    padding: 18px;
+
+    color: #fff;
+    background: #000;
+    background: rgba(0, 0, 0, .85);
+    text-shadow: #000 0 -1px 0;
+    * {
+      font-style: normal !important;
+    }
+  }
+  .gcard-about {
+    clear: left;
+  }
+  a {
+    font-family: Helvetica, Arial, Tahoma, sans-serif;
+
+    text-decoration: none !important;
+
+    color: #fff !important;
+    border: none !important;
+    &:hover {
+      text-decoration: none !important;
+
+      color: #51a6da !important;
+      border: none !important;
+    }
+  }
+  ul {
+    font-size: 12px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    li {
+      list-style: none;
+    }
+  }
+  p {
+    font-size: 12px;
+
+    margin: 0 0 10px;
+
+    text-align: left;
+
+    color: #fff;
+  }
+  .grav-small {
+    font-size: 10px;
+  }
+  .grav-grav {
+    line-height: 50%;
+
+    float: left;
+
+    padding: 0 !important;
+
+    border: solid 3px #fff;
+    box-shadow: inset 0 1px 0 #64a8d1, 0 1px 5px #000;
+  }
+}
+
+.pos-left .grav-grav {
+  float: right;
+}
+
+.gcard {
+  .grav-grav img {
+    margin: 0;
+    padding: 0;
+  }
+  .grav-info {
+    float: left;
+
+    width: 220px;
+    margin-left: 20px;
+  }
+}
+
+.pos-left .grav-info {
+  float: right;
+
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.gcard h4 {
+  font-family: Helvetica, Arial, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 115%;
+  line-height: 90%;
+
+  float: left;
+
+  margin: 0 10px 5px 0 !important;
+  padding: 0 !important;
+
+  text-align: left;
+  vertical-align: middle;
+  text-transform: none;
+}
+
+x {
+  &:-moz-any-link,
+  &:default {
+    line-height: 90%;
+  }
+}
+
+.gcard {
+  .grav-about,
+  .grav-links,
+  .grav-gallery,
+  .grav-services {
+    display: none;
+  }
+}
+
+.gcard-about .grav-about,
+.gcard-links .grav-links,
+.gcard-gallery .grav-gallery,
+.gcard-services .grav-services {
+  display: block;
+}
+
+.grav-about {
+  clear: left;
+}
+
+a.grav-edit-profile {
+  border-bottom: 1px solid #666 !important;
+  &:hover {
+    border-bottom: 1px solid #444 !important;
+  }
+}
+
+.grav-loc {
+  font-size: 90% !important;
+
+  clear: left;
+
+  margin: 0 0 1px;
+
+  color: #9fa09f !important;
+}
+
+.gcard .grav-cardarrow {
+  position: absolute;
+  top: 23px;
+  left: -8px;
+
+  display: inline-block;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  border-top: 8px solid transparent;
+  border-right: 8px solid rgba(0, 0, 0, .85);
+  border-bottom: 8px solid transparent;
+}
+
+.pos-left .grav-cardarrow {
+  right: -8px !important;
+  left: auto;
+
+  border-right: none;
+  border-left: 8px solid rgba(0, 0, 0, .85);
+}
+
+.gcard {
+  .grav-cardarrow {
+    display: none;
+  }
+  .grav-tag {
+    position: absolute;
+    top: 0;
+    right: -22px;
+
+    clear: both;
+
+    width: 48px;
+    height: 61px;
+
+    background: url(/images/grav-tag.png) top right no-repeat;
+    background-size: 48px 61px;
+  }
+}
+
+.pos-left .grav-tag {
+  right: auto;
+  left: -22px;
+
+  background: url(/images/grav-tag-left.png) top right no-repeat;
+  background-size: 48px 61px;
+}
+
+.gcard .grav-tag a {
+  display: block;
+
+  width: 48px;
+  height: 61px;
+
+  text-decoration: none;
+}
+
+.pos-left .grav-tag a {
+  transform: scaleX(-1);
+
+  filter: fliph;
+}
+
+.gcard .grav-extra {
+  float: left;
+
+  margin: 5px 5px 0 0;
+  margin-top: 1px;
+
+  vertical-align: middle;
+}
+
+x {
+  &:-moz-any-link,
+  &:default {
+    margin-top: 1px;
+  }
+}
+
+.gcard .grav-extra {
+  padding-bottom: 2px !important;
+  a {
+    font-size: 11px;
+    line-height: 80%;
+
+    display: block;
+
+    padding: 3px 5px 3px 17px !important;
+
+    color: #000 !important;
+    border-radius: 3px;
+    text-shadow: none;
+  }
+}
+
+x {
+  &:-moz-any-link,
+  &:default {
+    padding-bottom: 2px !important;
+  }
+}
+
+.gcard {
+  .grav-extra a:hover {
+    color: #fff !important;
+    background-color: #3b91c5;
+  }
+  .comments a {
+    background: #fff url(/images/pillicon.png) 3px 2px no-repeat;
+    &:hover {
+      background-position: -11px 2px;
+    }
+  }
+  .likes a {
+    background: #fff url(/images/pillicon.png) 4px -13px no-repeat;
+    &:hover {
+      background-position: -10px -13px;
+    }
+  }
+  .grav-disable {
+    font-size: 10px;
+    line-height: 10px;
+
+    margin: 3px 0 -5px;
+    a {
+      color: #666 !important;
+      &:hover {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+a.grav-view-complete {
+  font-family: Helvetica Neue Bold, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+
+  display: inline-block;
+
+  margin: 0 0 10px;
+  padding: 5px 15px;
+
+  text-decoration: none;
+
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  background: #3d92c6;
+  background: linear-gradient(top, #3d92c6 0, #0e74b2 100%);
+  box-shadow: inset 0 1px 0 #64a8d1, 0 1px 3px #000;
+  text-shadow: 0 -1px 0 #124869;
+  &:hover {
+    color: #fff !important;
+    background: #51a6da;
+    background: linear-gradient(top, #51a6da 0, #3d92c6 100%);
+    box-shadow: inset 0 1px 0 #86c1e5, 0 1px 5px #000;
+  }
+  &:active {
+    color: #d3e6f1;
+    background: #51a6da;
+    background: linear-gradient(top, #0e74b2 0, #3d92c6 100%);
+    box-shadow: inset 0 -1px 0 #4f9ccb, 0 1px 1px #000;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .gcard .grav-tag {
+    background-image: url(/images/grav-tag-2x.png);
+  }
+
+  .pos-left .grav-tag {
+    background-image: url(/images/grav-tag-left-2x.png);
+  }
+}
